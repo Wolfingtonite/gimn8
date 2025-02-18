@@ -155,8 +155,22 @@ a {
 /* Banner */
 
 .banner {
-  margin: 0% auto 0% auto;
-  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcc00;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  text-align: center;
+  font-size: clamp(20px, 2vw, 40px);
+  font-weight: 500;
+  border-radius: 20px;
+  max-width: auto;
+  margin: 10px 20%;
+}
+.banner:hover {
+  background-color: #ffdd33;
 }
 
 #bigger {
