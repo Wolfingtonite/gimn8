@@ -173,6 +173,12 @@ a {
   background-color: #ffdd33;
 }
 
+@media (max-width: 700px) {
+  .banner {
+    margin: auto;
+  }
+}
+
 #bigger {
   font-size: 4vh;
   padding: 2%;
