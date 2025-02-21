@@ -3,16 +3,11 @@ a {
   color: #000000;
 }
 
-/* Top Hearder */
+/* Top Header */
 
-.topheader {
-  /* border-radius: 20px; */
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(173, 240, 240);
-  border-radius: 20px;
+.burger-menu {
+  display: none;
 }
-
-/* Top Header's List */
 
 .top-container {
   display: flex;
@@ -20,11 +15,15 @@ a {
   justify-content: center;
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(173, 240, 240);
+  border-radius: 10px;
+  margin: 20px 0 20px 0;
 }
 
 .topelement:not(#ref) {
   padding: 10px;
-  font-size: 120%;
+  font-size: 27px;
   background-color: rgb(119, 231, 188);
   margin: 3px;
   border-radius: 10px;
@@ -34,6 +33,38 @@ a {
 @media (min-width: 2000px) {
   #topelement {
     font-size: 3vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .topelement:not(#ref) {
+    flex: 0 0 auto;
+  }
+  .burger-menu {
+    display: block; /* Показываем кнопку */
+    position: fixed;
+    z-index: 1001;
+    font-size: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .top-container {
+    position: fixed;
+    width: 96.3%;
+    height: auto;
+    transform: translateY(-140%);
+    transition: transform 0.3s ease;
+    padding: 20px 0 20px 0;
+    overflow: hidden;
+    z-index: 10;
+    margin-top: 60px;
+  }
+  .top-container.active {
+    transform: translateY(0); /* Показываем меню (опускаем вниз) */
+    height: auto;
+    overflow: hidden;
   }
 }
 
@@ -50,10 +81,52 @@ a {
 
 /* Header */
 
-.header-img {
+.head-banner {
+  display: block;
+  position: relative;
   width: 100%;
-  border-radius: 20px;
-  margin-bottom: 1%;
+  height: 300px;
+  overflow: hidden;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Стилm для изображения */
+.head-banner-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/11WZ-5R20luCs111.jpg);
+  background-size: cover;
+  background-position: 80% 87%;
+  filter: blur(5px);
+}
+
+/* Затемнение изображения для лучшей читаемости текста */
+.head-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Затемнение */
+  z-index: 1;
+}
+
+/* Стили для текста */
+.head-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  font-weight: bold;
+  z-index: 2;
 }
 
 /* Main */
@@ -61,7 +134,7 @@ a {
 .text {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(187, 216, 216);
-  font-size: 2vh;
+  font-size: clamp(20px, 2vw, 40px);
   margin-top: 20px;
   margin-left: 5%;
   margin-right: 5%;
@@ -175,7 +248,7 @@ a {
 
 @media (max-width: 700px) {
   .banner {
-    margin: auto;
+    margin: 2% auto 2% auto;
   }
 }
 
