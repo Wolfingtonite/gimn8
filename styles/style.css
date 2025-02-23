@@ -3,6 +3,10 @@ a {
   color: #000000;
 }
 
+a:hover {
+  opacity: 80%;
+}
+
 /* Top Header */
 
 .burger-menu {
@@ -42,7 +46,7 @@ a {
 .topelement:not(#ref) {
   padding: 10px;
   font-size: 27px;
-  background-color: rgb(119, 231, 188);
+  background-color: rgb(115, 248, 181);
   margin: 3px;
   border-radius: 10px;
   text-indent: 0%;
@@ -113,6 +117,12 @@ a {
   margin-bottom: 20px;
 }
 
+@media (min-width: 2000px) {
+  .head-banner {
+    height: 700px;
+  }
+}
+
 /* Стиль для изображения */
 .head-banner-image {
   position: relative;
@@ -152,7 +162,7 @@ a {
 .text {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(187, 216, 216);
-  font-size: clamp(20px, 2vw, 40px);
+  font-size: clamp(23px, 2vw, 5vw);
   margin-top: 20px;
   margin-left: 5%;
   margin-right: 5%;
@@ -189,7 +199,7 @@ a {
 }
 
 .callout {
-  background-color: rgb(158, 241, 210);
+  background-color: rgb(115, 248, 181);
   border-radius: 30px;
   padding: 3%;
   padding-left: 5%;
@@ -212,19 +222,23 @@ a {
   width: 28%;
   height: auto;
   /* параметр высоты автоматический, но максимальный */
-  background-color: rgb(235, 233, 113);
+  background-color: rgb(240, 231, 103);
   margin: 3% auto 3% auto;
   border-radius: 50px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  padding: 10px 5px 10px 5px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .card-container {
     flex-direction: column;
     height: 100%;
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .width-more {
     width: -45%;
   }
@@ -240,19 +254,16 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffcc00;
+  background-color: rgb(240, 231, 103);
   padding: 15px;
   font-family: Arial, sans-serif;
   text-decoration: none;
   text-align: center;
-  font-size: clamp(20px, 2vw, 40px);
+  font-size: clamp(20px, 2vw, 5vw);
   font-weight: 500;
   border-radius: 20px;
   max-width: auto;
   margin: 10px 20%;
-}
-.banner:hover {
-  background-color: #ffdd33;
 }
 
 @media (max-width: 700px) {
@@ -274,7 +285,7 @@ a {
 .inside-card-icon {
   text-indent: -5px;
   text-align: center;
-  font-size: 500%;
+  font-size: clamp(75px, 100px, 3vh);
   margin: 0;
   padding: 3%;
 }
@@ -289,43 +300,6 @@ a {
 }
 /* Cards-end */
 
-/* Link-Banner */
-
-.link-banner-container {
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  width: 100%;
-  /* параметр высоты автоматический, но максимальный */
-  background-color: rgb(235, 233, 113);
-  margin: 3% auto 3% auto;
-  border-radius: 30px;
-}
-
-.inside-link-banner-icon {
-  font-size: 350%;
-  padding: 2%;
-}
-
-.inside-link-banner-text {
-  height: 100%;
-  margin: auto;
-  font-size: 110%;
-}
-
-@media (max-width: 700px) {
-  .inside-link-banner-icon {
-    padding: 2%;
-    margin: auto;
-  }
-  .inside-link-banner-text {
-    padding: 2%;
-    margin: auto;
-  }
-}
-
-/* Link-Banner-end */
-
 .title {
   text-align: center;
   text-indent: 0%;
@@ -339,7 +313,7 @@ a {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   #flex-direction-row {
     flex-direction: column;
     width: 60vw;
@@ -350,12 +324,14 @@ a {
   }
 }
 
-#phismat {
-  margin-right: 4%;
-}
+@media (min-width: 800px) {
+  #phismat {
+    margin-right: 4%;
+  }
 
-#himbio {
-  margin-left: 4%;
+  #himbio {
+    margin-left: 4%;
+  }
 }
 
 @media (max-width: 700px) {
@@ -371,6 +347,10 @@ a {
 
 .footer {
   font-size: 1, 5vh;
+}
+
+#jumpToTopBtn {
+  cursor: pointer;
 }
 
 /* li emoji */
