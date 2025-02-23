@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(231, 231, 231);
+}
+
 a {
   text-decoration: none;
   color: #000000;
@@ -20,7 +24,7 @@ a:hover {
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(173, 240, 240);
+  background-color: #a5e1fd;
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
@@ -32,7 +36,7 @@ a:hover {
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(173, 240, 240);
+  background-color: #a5e1fd;
   border-radius: 10px;
   margin: 20px 12% 20px 12%;
 }
@@ -46,7 +50,7 @@ a:hover {
 .topelement:not(#ref) {
   padding: 10px;
   font-size: 27px;
-  background-color: rgb(115, 248, 181);
+  background-color: #68f3be;
   margin: 3px;
   border-radius: 10px;
   text-indent: 0%;
@@ -161,7 +165,7 @@ a:hover {
 
 .text {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(187, 216, 216);
+  background-color: #a5e1fd;
   font-size: clamp(23px, 2vw, 5vw);
   margin-top: 20px;
   margin-left: 5%;
@@ -173,7 +177,7 @@ a:hover {
 }
 
 .wowcallout {
-  background-color: rgb(231, 108, 70);
+  background-color: rgb(245, 151, 123);
   border-radius: 30px;
   padding: 2%;
   padding: 3%;
@@ -186,7 +190,7 @@ a:hover {
 }
 
 .infocallout {
-  background-color: rgb(236, 135, 88);
+  background-color: rgb(218, 149, 117);
   border-radius: 30px;
   padding: 2%;
   padding: 3%;
@@ -199,7 +203,7 @@ a:hover {
 }
 
 .callout {
-  background-color: rgb(115, 248, 181);
+  background-color: #72c9df;
   border-radius: 30px;
   padding: 3%;
   padding-left: 5%;
@@ -211,7 +215,7 @@ a:hover {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(102, 155, 224);
+  background-color: rgb(97, 179, 218);
   border-radius: 30px;
   justify-content: space-around;
 }
@@ -222,7 +226,7 @@ a:hover {
   width: 28%;
   height: auto;
   /* параметр высоты автоматический, но максимальный */
-  background-color: rgb(240, 231, 103);
+  background-color: #dde85f;
   margin: 3% auto 3% auto;
   border-radius: 50px;
   justify-content: space-between;
@@ -254,7 +258,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(240, 231, 103);
+  background-color: #f5c73d;
   padding: 15px;
   font-family: Arial, sans-serif;
   text-decoration: none;
@@ -351,6 +355,7 @@ a:hover {
 
 #jumpToTopBtn {
   cursor: pointer;
+  background-color: #55f1b5;
 }
 
 /* li emoji */
