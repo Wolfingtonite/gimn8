@@ -1,5 +1,6 @@
+// Код для Панели навигации на мобильных
+
 document.addEventListener("DOMContentLoaded", function () {
-  // Получаем элементы
   const burgerMenu = document.querySelector(".burger-menu");
   const topContainer = document.querySelector(".top-container");
 
@@ -17,5 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
       topContainer.classList.remove("active");
       burgerMenu.textContent = "☰";
     }
+  });
+});
+
+// Кнопка для прокрутки наверх
+const jumpToTopBtn = document.getElementById("jumpToTopBtn");
+
+// Плавная прокрутка страниц вверх при нажатии на кнопку
+jumpToTopBtn.addEventListener("click", function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
   });
 });

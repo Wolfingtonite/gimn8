@@ -61,7 +61,7 @@ a {
   .burger-menu {
     display: block; /* Показываем кнопку */
     position: fixed;
-    z-index: 1001;
+    z-index: 100;
     font-size: 40px;
     background: none;
     border: none;
@@ -160,15 +160,6 @@ a {
   border-radius: 20px;
   text-indent: 30px;
   width: auto;
-}
-
-/* For Small Screens */
-
-@media (min-width: 700px) {
-  .text {
-    margin-left: 12%;
-    margin-right: 12%;
-  }
 }
 
 .wowcallout {
