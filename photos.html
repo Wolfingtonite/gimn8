@@ -8,7 +8,6 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="java.js"></script> <!-- Подключаем внешний JavaScript -->
     <!-- Top Menu -->
     <div class="burger-menu" aria-label="Открыть меню">☰</div> 
         <div class="top-container">
@@ -35,10 +34,34 @@
         <span class="">Перейти на сайт для подачи заявления на поступление</span>
     </a>
       <div class="text">
-            <pclass="callout"> Это пустая страница, здесь ничего нет, используйте в качестве шаблона.</p>
-      </div>
+        <h2 class="callout title"> Галерея</h2>
+        <p class="callout"> Это тестовая версия, вскоре будут фото.</p>
+       
+        <!-- Галерея -->
+        <div class="gallery">
+          <div class="img-element">
+            <img src="img/chemestry.jpg">
+          </div>
+          <div class="img-element">
+            <img src="photo/image.png">
+          </div>
+          <div class="img-element">
+            <img src="photo/image.png">
+          </div>
+          <div class="img-element">
+            <img src="img/mainhed.png">
+          </div>
+          <div class="img-element">
+            <img src="img/chemestry.jpg">
+          </div>
+        </div>
+
+        <!-- Окно для увеличенного изображения -->
+        <div class="overlay">
+          <span class="close-btn">✕</span>
+          <img src="" alt="Увеличенное изображение" class="large-img">
+        </div>
     </main>
-    
 <footer>
         <p>
           <div class="bottom-container">
@@ -50,6 +73,7 @@
           </div>
         </p>
     </footer>
+    <script src="java.js"></script> <!-- Подключаем внешний JavaScript -->
   </body>
 </html>
 
