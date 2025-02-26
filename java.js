@@ -49,6 +49,14 @@ imgElements.forEach((element) => {
   });
 });
 
+imgElements.forEach((element) => {
+  element.addEventListener("click", () => {
+    const imgSrc = element.querySelector("video").src; // Получаем src изображения
+    largeImg.src = imgSrc; // Устанавливаем src в увеличенное изображение
+    overlay.classList.add("open"); // Показываем оверлей
+  });
+});
+
 // Закрываем оверлей при клике на крестик
 closeBtn.addEventListener("click", () => {
   overlay.classList.remove("open"); // Скрываем оверлей
