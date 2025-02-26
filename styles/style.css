@@ -17,6 +17,14 @@ a:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.nav-ul {
+  background-color: #7bf4c6;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  list-style: none;
+}
+
 /* Top Header */
 
 .burger-menu {
@@ -318,6 +326,7 @@ a:hover {
 .title {
   text-align: center;
   text-indent: 0%;
+  padding: 30px;
 }
 
 #flex-direction-row {
@@ -364,12 +373,13 @@ a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 10px;
+  margin-top: 20px;
 }
 .img-element {
-  width: 25vh;
-  height: auto;
+  width: 24vh;
+  height: 24vh;
   cursor: pointer;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -386,6 +396,10 @@ a:hover {
   display: block;
 }
 
+.video-circle {
+  clip-path: circle(50% at center);
+}
+
 .img-element {
   border-radius: 0px;
 }
@@ -394,12 +408,26 @@ a:hover {
   transform: scale(110%);
 }
 
+.gallery-callout {
+  background-color: #72c9df;
+  border-radius: 30px;
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 10%;
+  width: 20%;
+  text-align: center;
+  text-indent: 0px;
+}
 @media (max-width: 500px) {
   .img-element {
     width: 35vw;
   }
   .gallery {
     justify-content: space-around;
+  }
+  .gallery-callout {
+    width: 100%;
   }
 }
 
