@@ -14,7 +14,20 @@ a:hover {
 summary {
   text-align: center;
   text-indent: -5px;
-  cursor: pointer;
+}
+
+.nav-li {
+  font-size: clamp(22px, 2vw, 3vw);
+  margin: 0% 10% 0 10%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-ul {
+  background-color: #7bf4c6;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  list-style: none;
 }
 
 /* Top Header */
@@ -30,7 +43,7 @@ summary {
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #98e2ef;
+  background-color: #a7eaf3;
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
@@ -56,14 +69,11 @@ summary {
 .topelement:not(#ref) {
   padding: 10px;
   font-size: 27px;
-  background-color: #73efbf;
+  background-color: #7bf4c6;
   margin: 3px;
   border-radius: 10px;
   text-indent: 0%;
   transition: transform 0.3s ease;
-  width: fit-content;
-  height: auto;
-  text-align: center;
 }
 
 .topelement:hover {
@@ -204,7 +214,7 @@ summary {
 }
 
 .infocallout {
-  background-color: #f3945d;
+  background-color: rgb(218, 149, 117);
   border-radius: 30px;
   padding: 2%;
   padding: 3%;
@@ -240,7 +250,7 @@ summary {
   width: 28%;
   height: auto;
   /* параметр высоты автоматический, но максимальный */
-  background-color: #f0d952;
+  background-color: #f3e262;
   margin: 3% auto 3% auto;
   border-radius: 50px;
   justify-content: space-between;
@@ -272,7 +282,7 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3be39;
+  background-color: #f5c73d;
   padding: 15px;
   font-family: Arial, sans-serif;
   text-decoration: none;
@@ -280,11 +290,8 @@ summary {
   font-size: clamp(20px, 2vw, 5vw);
   font-weight: 500;
   border-radius: 20px;
-  margin: 10px 20vh 10px 20vh;
-}
-
-.mini {
-  width: auto;
+  max-width: auto;
+  margin: 10px 20%;
 }
 
 @media (max-width: 700px) {
@@ -371,18 +378,13 @@ summary {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 10px;
-  margin: 20px 0 20px 0;
+  margin-top: 20px;
 }
-
-.nowrap {
-  flex-wrap: nowrap !important;
-}
-
 .img-element {
-  width: clamp(200px, 20vw, 100px);
-  height: clamp(200px, 20vw, 100px);
+  width: 24vh;
+  height: 24vh;
   cursor: pointer;
   transition: transform 0.3s ease;
   overflow: hidden;
@@ -409,6 +411,10 @@ summary {
   border-radius: 15px;
 }
 
+.img-element {
+  border-radius: 0px;
+}
+
 .img-element:hover {
   transform: scale(110%);
 }
@@ -419,8 +425,8 @@ summary {
   padding: 1%;
   padding-left: 5%;
   padding-right: 5%;
-  height: clamp(20%, 25vh, 100%);
-  width: clamp(20%, 25vh, 100%);
+  height: 10%;
+  width: 20%;
   text-align: center;
   text-indent: 0px;
 }
@@ -526,21 +532,6 @@ summary {
 
 #phismat {
   list-style-type: "🔬👨‍🔬";
-  padding: 5px;
-}
-
-#heart {
-  list-style-type: "❤️";
-  padding: 5px;
-}
-
-#heart-letter {
-  list-style-type: "💌";
-  padding: 5px;
-}
-
-#camera {
-  list-style-type: "📷";
   padding: 5px;
 }
 /* Tst */
