@@ -51,7 +51,7 @@ imgElements.forEach((element) => {
 
 imgElements.forEach((element) => {
   element.addEventListener("click", () => {
-    const imgSrc = element.querySelector("video").src; // Получаем src изображения
+    const imgSrc = element.querySelector("img").src; // Получаем src изображения
     largeImg.src = imgSrc; // Устанавливаем src в увеличенное изображение
     overlay.classList.add("open"); // Показываем оверлей
   });
