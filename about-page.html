@@ -88,7 +88,7 @@
     <!-- Подключаем Leaflet JS -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-      // Ждем, пока весь DOM загрузится
+    // Ждем, пока весь DOM загрузится
       document.addEventListener("DOMContentLoaded", function () {
         // Координаты места (Гиназия)
         const location = [56.87158817427388, 35.869804237808914];
@@ -97,7 +97,7 @@
         const map = L.map('map').setView(location, 15); // 15 - уровень масштабирования
   
         // Добавляем слой карты (используем OpenStreetMap)
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '' // Убираем атрибуцию 
         }).addTo(map);
   
