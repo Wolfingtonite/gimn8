@@ -17,6 +17,15 @@ summary {
   cursor: pointer;
 }
 
+.ul-base li {
+  list-style: none;
+  background-color: #ff7c55;
+  border-radius: 15px;
+  padding: 10px 15px 10px 15px;
+  margin: 1%;
+  text-indent: 0%;
+}
+
 /* Top Header */
 
 .burger-menu {
@@ -92,7 +101,7 @@ summary {
 
   .top-container {
     position: fixed;
-    width: 96.3%;
+    width: auto;
     height: auto;
     transform: translateY(-140%);
     transition: transform 0.3s ease;
@@ -100,6 +109,7 @@ summary {
     overflow: hidden;
     z-index: 10;
     margin-top: 60px;
+    left: 0px;
   }
   .top-container.active {
     transform: translateY(0); /* Показываем меню (опускаем вниз) */
@@ -191,7 +201,7 @@ summary {
 }
 
 .wowcallout {
-  background-color: rgb(245, 151, 123);
+  background-color: #ff7c55;
   border-radius: 30px;
   padding: 2%;
   padding: 3%;
@@ -318,6 +328,7 @@ summary {
   margin-right: 7%;
   margin-top: 4%;
   padding-bottom: 1%;
+  text-wrap: wrap;
 }
 /* Cards-end */
 
@@ -471,6 +482,24 @@ summary {
 
 .close-btn:hover {
   color: #ccc;
+}
+/* Map */
+
+#map {
+  display: flex;
+  height: 35vh;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-indent: 0px;
+}
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.image {
+  width: 100%;
 }
 /* Footer */
 
