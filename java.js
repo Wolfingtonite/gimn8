@@ -69,3 +69,23 @@ overlay.addEventListener("click", (event) => {
     overlay.classList.remove("open"); // Скрываем оверлей
   }
 });
+
+// Ждем, пока весь DOM загрузится
+document.addEventListener("DOMContentLoaded", function () {
+  // Координаты места (Гиназия)
+  const location = [56.87158817427388, 35.869804237808914];
+
+  // Инициализация карты
+  const map = L.map("map").setView(location, 15); // 15 - уровень масштабирования
+
+  // Добавляем слой карты (используем OpenStreetMap)
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: "", // Убираем атрибуцию
+  }).addTo(map);
+
+  // Добавляем маркер
+  L.marker(location)
+    .addTo(map)
+    .bindPopup("Тверская Гиназия №8") // Всплывающее сообщение
+    .openPopup();
+});
