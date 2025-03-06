@@ -39,7 +39,7 @@ summary {
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #8ae3d0;
+  background-color: #88d2c2;
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
@@ -65,7 +65,7 @@ summary {
 .topelement:not(#ref) {
   padding: 10px;
   font-size: 27px;
-  background-color: #72d5ce;
+  background-color: #52cbc3;
   margin: 3px;
   border-radius: 10px;
   text-indent: 0%;
