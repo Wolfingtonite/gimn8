@@ -39,7 +39,7 @@ summary {
   margin-top: -10px;
   padding: 1% 1% 1% 1%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #88d2c2;
+  background-color: #89d6d0;
   border-radius: 10px;
   margin: 20px 0 20px 0;
 }
@@ -65,7 +65,7 @@ summary {
 .topelement:not(#ref) {
   padding: 10px;
   font-size: 27px;
-  background-color: #52cbc3;
+  background-color: #6bd0cb;
   margin: 3px;
   border-radius: 10px;
   text-indent: 0%;
@@ -201,7 +201,7 @@ summary {
 }
 
 .wowcallout {
-  background-color: #f26969;
+  background-color: #e07272;
   border-radius: 20px;
   padding: 4%;
   padding-left: 5%;
@@ -213,7 +213,7 @@ summary {
 }
 
 .infocallout {
-  background-color: #f0725e;
+  background-color: #f38c7c;
   border-radius: 20px;
   padding: 4%;
   padding-left: 5%;
@@ -248,7 +248,7 @@ summary {
   width: 28%;
   height: auto;
   /* параметр высоты автоматический, но максимальный */
-  background-color: #e7c351;
+  background-color: #e8c553;
   margin: 3% auto 3% auto;
   border-radius: 50px;
   justify-content: space-between;
@@ -284,7 +284,7 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f3be39;
+  background-color: #f0c55b;
   padding: 15px;
   font-family: Arial, sans-serif;
   text-decoration: none;
