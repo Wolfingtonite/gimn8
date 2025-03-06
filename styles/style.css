@@ -109,7 +109,7 @@ summary {
     overflow: hidden;
     z-index: 10;
     margin-top: 60px;
-    margin: 1%;
+    margin: 3%;
     left: 0px;
   }
   .top-container.active {
@@ -249,7 +249,7 @@ summary {
   width: 28%;
   height: auto;
   /* параметр высоты автоматический, но максимальный */
-  background-color: #e8c553;
+  background-color: #efd957;
   margin: 3% auto 3% auto;
   border-radius: 50px;
   justify-content: space-between;
@@ -285,7 +285,7 @@ summary {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f0c55b;
+  background-color: #efd957;
   padding: 15px;
   font-family: Arial, sans-serif;
   text-decoration: none;
