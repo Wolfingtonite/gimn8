@@ -394,6 +394,12 @@ summary {
   flex-wrap: nowrap !important;
 }
 
+@media (max-width: 1000px) {
+  .nowrap {
+    flex-wrap: wrap !important;
+  }
+}
+
 .img-element {
   width: clamp(200px, 20vw, 100px);
   height: clamp(200px, 20vw, 100px);
