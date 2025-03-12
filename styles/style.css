@@ -210,7 +210,7 @@ summary {
 }
 
 .wowcallout::before {
-  content: "😲";
+  content: "  ";
 }
 
 .infocallout {
@@ -222,7 +222,7 @@ summary {
 }
 
 .infocallout::before {
-  content: "🤔";
+  content: "\1f914";
 }
 
 .callout {
@@ -541,29 +541,6 @@ summary {
 #proph {
   text-indent: -0px;
   font-size: 25px;
-}
-#esnat {
-  list-style-type: "🍏🧪";
-  padding: 5px;
-}
-
-#socgum {
-  list-style-type: "🫂🗿";
-  padding: 5px;
-}
-
-#socec {
-  list-style-type: "💹🪙";
-  padding: 5px;
-}
-
-#socmat {
-  list-style-type: "💻💹";
-  padding: 5px;
-}
-
-#phismat {
-  list-style-type: "🔬👨‍🔬";
 }
 
 #heart {
